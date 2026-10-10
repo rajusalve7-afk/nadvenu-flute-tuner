@@ -53,7 +53,9 @@ class PhoneFrame extends StatelessWidget {
                 child: Column(
                   children: [
                     const _StatusBar(),
-                    Expanded(child: child),
+                    Expanded(
+                      child: ScaffoldMessenger(child: child),
+                    ),
                   ],
                 ),
               ),

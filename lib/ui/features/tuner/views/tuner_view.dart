@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -24,6 +26,8 @@ class TunerView extends StatefulWidget {
 
 class _TunerViewState extends State<TunerView> {
   TunerViewModel? _tuner;
+  String? _notice;
+  Timer? _noticeTimer;
 
   @override
   void initState() {
@@ -37,6 +41,7 @@ class _TunerViewState extends State<TunerView> {
 
   @override
   void dispose() {
+    _noticeTimer?.cancel();
     _tuner?.removeListener(_onTuner);
     super.dispose();
   }
@@ -47,16 +52,15 @@ class _TunerViewState extends State<TunerView> {
     final l10n = AppLocalizations.of(context);
     final lock = tuner.takeLockNote();
     final micFailed = tuner.takeMicFailure();
-    if (lock != null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.sessionLocked(lock))),
-      );
-    }
-    if (micFailed) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.micUnavailable)),
-      );
-    }
+    final notice = micFailed
+        ? l10n.micUnavailable
+        : (lock == null ? null : l10n.sessionLocked(lock));
+    if (notice == null) return;
+    setState(() => _notice = notice);
+    _noticeTimer?.cancel();
+    _noticeTimer = Timer(const Duration(seconds: 3), () {
+      if (mounted) setState(() => _notice = null);
+    });
   }
 
   @override
@@ -334,6 +338,15 @@ class _TunerViewState extends State<TunerView> {
             ),
             const SizedBox(height: 12),
             WaveformStrip(samples: tuner.waveform),
+            if (_notice != null)
+              Padding(
+                padding: const EdgeInsets.only(top: 8),
+                child: Text(
+                  _notice!,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: palette.gold, fontSize: 12),
+                ),
+              ),
             const SizedBox(height: 16),
             Center(
               child: Column(
