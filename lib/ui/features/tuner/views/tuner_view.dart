@@ -23,19 +23,21 @@ class TunerView extends StatefulWidget {
 }
 
 class _TunerViewState extends State<TunerView> {
+  TunerViewModel? _tuner;
+
   @override
   void initState() {
     super.initState();
-    final tuner = context.read<TunerViewModel>();
-    tuner.addListener(_onTuner);
+    _tuner = context.read<TunerViewModel>();
+    _tuner!.addListener(_onTuner);
     if (widget.autostart) {
-      tuner.ensureRunning();
+      _tuner!.ensureRunning();
     }
   }
 
   @override
   void dispose() {
-    context.read<TunerViewModel>().removeListener(_onTuner);
+    _tuner?.removeListener(_onTuner);
     super.dispose();
   }
 
