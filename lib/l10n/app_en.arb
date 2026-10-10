@@ -1,0 +1,179 @@
+{
+  "@@locale": "en",
+  "productName": "Flute Tuner Pro",
+  "tagline": "Tune Your Soul",
+  "navTuner": "Tuner",
+  "navAnalysis": "Analysis",
+  "navSessions": "Sessions",
+  "navSettings": "Settings",
+  "instrumentLabel": "Instrument",
+  "rootScale": "Root Scale (Sa)",
+  "inTune": "In Tune",
+  "flat": "Flat",
+  "sharp": "Sharp",
+  "cents": "Cents",
+  "confidence": "Confidence",
+  "a4Reference": "A4 Reference",
+  "targetHz": "Target: {hz} Hz",
+  "@targetHz": {
+    "placeholders": {
+      "hz": {
+        "type": "String"
+      }
+    }
+  },
+  "selectInstrument": "Select Instrument",
+  "settingsTitle": "Settings",
+  "sectionTuning": "Tuning",
+  "referenceFrequency": "Reference Frequency (A4)",
+  "tuningTolerance": "Tuning Tolerance",
+  "sensitivity": "Sensitivity",
+  "low": "Low",
+  "medium": "Medium",
+  "high": "High",
+  "sectionPreferences": "App Preferences",
+  "darkTheme": "Dark Theme",
+  "language": "Language",
+  "showSwaras": "Show Indian Swaras",
+  "defaultInstrument": "Default Instrument",
+  "sectionAbout": "About",
+  "privacyPolicy": "Privacy Policy",
+  "rateUs": "Rate Us",
+  "appVersion": "App Version",
+  "goPro": "Go Pro",
+  "nadvenuPro": "Nadvenu Pro",
+  "unlockPotential": "Unlock the Full Potential",
+  "benefitAdFreeTitle": "Ad-Free Experience",
+  "benefitAdFreeBody": "No interruptions while tuning",
+  "benefitModesTitle": "Advanced Tuning Modes",
+  "benefitModesBody": "Custom scales & temperaments",
+  "benefitAnalysisTitle": "Detailed Analysis",
+  "benefitAnalysisBody": "Harmonics, frequency graphs",
+  "benefitSessionsTitle": "Save Unlimited Sessions",
+  "benefitSessionsBody": "Keep your practice history",
+  "benefitProfilesTitle": "Custom Instrument Profiles",
+  "benefitProfilesBody": "Create and save your own tunings",
+  "benefitSupportTitle": "Support Development",
+  "benefitSupportBody": "Help us grow Nadvenu Flutes",
+  "upgradeToPro": "Upgrade to Pro",
+  "restorePurchase": "Restore Purchase",
+  "proActive": "Pro Preview Active",
+  "proPreviewNote": "This is a local preview. No payment is taken.",
+  "upgradeDone": "Nadvenu Pro preview is unlocked on this device.",
+  "restoreDone": "Preview purchases restored on this device.",
+  "analysisTitle": "Analysis",
+  "spectrum": "Spectrum",
+  "harmonics": "Harmonics",
+  "detectedFrequency": "Detected Frequency",
+  "tuningSessions": "Tuning Sessions",
+  "selectLanguage": "Select Language",
+  "referenceTitle": "Reference Frequency",
+  "standardFootnote": "A4 (440 Hz) is the standard reference used in most modern music.",
+  "demoBanner": "Demo mode — simulated pitch",
+  "listening": "Listening",
+  "micUnavailable": "Microphone unavailable. Staying in demo mode so you can still tune.",
+  "sessionLocked": "Saved {note} to your tuning sessions.",
+  "@sessionLocked": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "outsideRange": "Outside this flute's usual range",
+  "shareApp": "Share App",
+  "shareTitle": "Share Nadvenu",
+  "shareMessage": "Tune your flute with Nadvenu Flute Tuner Pro — Tune Your Soul. Sargam, cents, and a reference pitch you choose.",
+  "shareCopied": "Share text copied.",
+  "copyText": "Copy text",
+  "rateTitle": "Rate Nadvenu",
+  "rateBody": "Nadvenu Flutes makes this tuner for players who want a steady Sa. A rating stays on this device and is not sent anywhere.",
+  "rateThanks": "Thank you. Your rating is saved on this device.",
+  "submitRating": "Submit rating",
+  "privacyTitle": "Privacy Policy",
+  "privacyBody": "Nadvenu Flute Tuner Pro is made by Nadvenu Flutes. The app does not create an account and does not upload your playing. Pitch is measured on this device. Settings, language, and tuning sessions stay in local storage. Microphone access is used only while you choose to listen, and demo mode works with no microphone at all. The Pro upgrade in this version is a preview: it unlocks a flag on this device and does not charge a payment or contact a store.",
+  "todayTime": "Today, {time}",
+  "@todayTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "noSessions": "No sessions yet",
+  "noSessionsBody": "Hold a steady note until the pill says In Tune. Nadvenu saves that reading here.",
+  "tuningMode": "Tuning Mode",
+  "equalTemperament": "Equal temperament",
+  "justIntonation": "Just intonation",
+  "proRequired": "Just intonation is part of the Nadvenu Pro preview.",
+  "openMenu": "Open menu",
+  "close": "Close",
+  "komal": "komal",
+  "tivra": "tivra",
+  "swaraSa": "Sa",
+  "swaraRe": "Re",
+  "swaraGa": "Ga",
+  "swaraMa": "Ma",
+  "swaraPa": "Pa",
+  "swaraDha": "Dha",
+  "swaraNi": "Ni",
+  "instrumentBansuri": "Indian Bansuri",
+  "instrumentBansuriDesc": "Traditional Indian Bamboo Flute",
+  "instrumentConcert": "Western Concert Flute",
+  "instrumentConcertDesc": "Standard Concert Flute",
+  "instrumentNative": "Native American Flute",
+  "instrumentNativeDesc": "Native American Style",
+  "instrumentQuena": "Quena",
+  "instrumentQuenaDesc": "Andean Flute",
+  "instrumentRecorder": "Recorder",
+  "instrumentRecorderDesc": "Soprano / Alto Recorder",
+  "instrumentChromatic": "Universal Chromatic",
+  "instrumentChromaticDesc": "All Notes C–B",
+  "rangeSpan": "{low} – {high}",
+  "@rangeSpan": {
+    "placeholders": {
+      "low": {
+        "type": "String"
+      },
+      "high": {
+        "type": "String"
+      }
+    }
+  },
+  "toleranceValue": "±{cents} cents",
+  "@toleranceValue": {
+    "placeholders": {
+      "cents": {
+        "type": "int"
+      }
+    }
+  },
+  "hzValue": "{hz} Hz",
+  "@hzValue": {
+    "placeholders": {
+      "hz": {
+        "type": "String"
+      }
+    }
+  },
+  "percentValue": "{value}%",
+  "@percentValue": {
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "decrease": "Decrease",
+  "increase": "Increase",
+  "waitingForTone": "Waiting for a tone",
+  "versionLabel": "v1.0.0",
+  "a4Symbol": "A4",
+  "languageNameEn": "English",
+  "languageNameHi": "हिन्दी",
+  "languageNameMr": "मराठी",
+  "languageNameGu": "ગુજરાતી",
+  "languageNameBn": "বাংলা",
+  "languageNameTa": "தமிழ்",
+  "languageNameTe": "తెలుగు"
+}
